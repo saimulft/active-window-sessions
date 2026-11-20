@@ -1,20 +1,22 @@
 {
   "name": "active-window-sessions",
   "version": "0.1.0",
-  "description": "Turn active-window polling into clean time segments per app and per website: merges short gaps, drops blips, respects idle time, ignores system UI and aggregates totals.",
+  "description": "Turn active-win and get-windows readings into time segments per app and website: merges gaps, drops blips and respects idle time.",
   "keywords": [
-    "active-window",
     "active-win",
+    "active-window",
     "get-windows",
+    "app usage tracker",
+    "track time spent on apps",
+    "screen time tracker mac",
     "time-tracking",
     "app-usage",
-    "screen-time",
     "activity-tracking",
     "idle",
     "sessions",
     "electron"
   ],
-  "homepage": "https://github.com/saimulft/active-window-sessions#readme",
+  "homepage": "https://oss.saimulislam.com/active-window-sessions/",
   "bugs": {
     "url": "https://github.com/saimulft/active-window-sessions/issues"
   },

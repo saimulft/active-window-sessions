@@ -1,10 +1,12 @@
 # active-window-sessions
 
-Turn active-window polling into clean time segments per app and per website.
+Turn active-win and get-windows polling into clean time segments per app and per website.
 
 [![npm version](https://img.shields.io/npm/v/active-window-sessions)](https://www.npmjs.com/package/active-window-sessions)
 [![license](https://img.shields.io/npm/l/active-window-sessions)](https://www.npmjs.com/package/active-window-sessions)
 [![node](https://img.shields.io/node/v/active-window-sessions)](https://www.npmjs.com/package/active-window-sessions)
+
+Guide, examples and FAQ: https://oss.saimulislam.com/active-window-sessions/
 
 Started as the app-tracking core of the [Staffic](https://staffic.io) desktop app.
 
