@@ -1,6 +1,6 @@
 {
   "name": "active-window-sessions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turn active-win and get-windows readings into time segments per app and website: merges gaps, drops blips and respects idle time.",
   "keywords": [
     "active-win",
