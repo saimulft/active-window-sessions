@@ -1,18 +1,47 @@
-# active-window-sessions
+<h1 align="center">active-window-sessions</h1>
 
-Turn active-win and get-windows polling into clean time segments per app and per website.
+<p align="center">
+  Turn active-win and get-windows polling into clean time segments per app and per website.
+</p>
 
-[![npm version](https://img.shields.io/npm/v/active-window-sessions)](https://www.npmjs.com/package/active-window-sessions)
-[![license](https://img.shields.io/npm/l/active-window-sessions)](https://www.npmjs.com/package/active-window-sessions)
-[![node](https://img.shields.io/node/v/active-window-sessions)](https://www.npmjs.com/package/active-window-sessions)
+<p align="center">
+  <a href="https://www.npmjs.com/package/active-window-sessions"><img alt="npm version" src="https://img.shields.io/npm/v/active-window-sessions" /></a>
+  <a href="https://www.npmjs.com/package/active-window-sessions"><img alt="license" src="https://img.shields.io/npm/l/active-window-sessions" /></a>
+  <a href="https://www.npmjs.com/package/active-window-sessions"><img alt="node" src="https://img.shields.io/node/v/active-window-sessions" /></a>
+</p>
 
-Guide, examples and FAQ: https://oss.saimulislam.com/active-window-sessions/
+<p align="center">
+  <a href="https://oss.saimulislam.com/active-window-sessions/">Guide, examples and FAQ</a> ·
+  <a href="https://www.npmjs.com/package/active-window-sessions">npm</a> ·
+  <a href="https://github.com/saimulft/active-window-sessions">GitHub</a> ·
+  <a href="https://github.com/saimulft/active-window-sessions/blob/main/CHANGELOG.md">Changelog</a>
+</p>
+
+<p align="center">
+  <a href="https://oss.saimulislam.com/active-window-sessions/">
+  <img alt="Twelve window samples on a timeline turned into two segments: Code for 8 seconds and Google Chrome on github.com for 11 seconds, with a system alert and a half-second blip dropped and the idle time not counted" src="https://oss.saimulislam.com/shots/active-window-sessions/timeline.webp" width="880" />
+  </a>
+</p>
+
+<p align="center">
+  <b>Samples in, clean segments out.</b> sessionize() drops alerts and short blips and cuts idle time at the last input. aggregate() then totals by app or host.
+</p>
 
 Started as the app-tracking core of the [Staffic](https://staffic.io) desktop app.
 
 [get-windows](https://github.com/sindresorhus/get-windows) and [active-win](https://github.com/sindresorhus/active-win) tell you which window is in front at one moment. Turning a stream of those readings into reliable time segments is left to you: gaps when the window flickers, blips from a notification, time the user was away, and system UI that is not an app. `active-window-sessions` does that part. It merges short gaps, drops blips, cuts a segment at the last input when the user goes idle, ignores system UI, and adds up the totals per app and per website.
 
 The core has no dependencies and takes any `sample` function, so it works with get-windows or anything else that can name the active window.
+
+## See it work
+
+### What sessionize() returns
+
+Plain objects with the app, the page host for browsers, and start and end times.
+
+<img alt="The segments returned by sessionize() printed in a terminal: app, appId, start and end times for each segment" src="https://oss.saimulislam.com/shots/active-window-sessions/output.webp" width="880" />
+
+More examples and the FAQ are on the [guide](https://oss.saimulislam.com/active-window-sessions/).
 
 ## Install
 
